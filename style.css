@@ -16,11 +16,23 @@ body {
   box-sizing: border-box;
 
   font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html body {
+  padding-top: 70px;
+  background-color: #756ab6;
 }
 
 .intro-image {
   text-align: center;
-  font-size: 25px;
+  font-size: 3em;
   background-image: url("images/crochet1.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,15 +42,29 @@ body {
 
 header {
   display: flex;
-  background-color: #ffe5e5;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 5px;
+  background-color: #ffe5e5;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.header-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px 0 5px 0;
+  align-items: center;
 }
 
 .header-menu {
   display: flex;
   flex-direction: column;
+  font-size: 0.8em;
 }
 
 .login-box {
@@ -49,12 +75,20 @@ header {
 nav {
   display: flex;
   justify-content: space-evenly;
-  padding: 5px;
+  background-color: white;
+  width: 100%;
+  padding: 5px 0 5px 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
 }
 
 .header-bar {
   background-color: #ac87c5;
-  padding: 2px;
+  padding: 2.5px;
+  width: 100%;
 }
 
 h1 {
@@ -74,6 +108,8 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 0 10px 0;
+  font-size: 2.5em;
+  background-color: white;
 }
 
 .custom-container {
@@ -81,6 +117,7 @@ h1 {
   flex-direction: column;
   background-color: #ffe5e5;
   padding: 10px 0 10px 0;
+  font-size: 2.5em;
 }
 
 .pagetitle {
@@ -99,32 +136,6 @@ h1 {
   align-items: center;
 }
 
-/* adds image as background  */
-/* .sale-image {
-  background-image: url("images/sale.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.new-image {
-  background-image: url("images/turtle.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.all-image {
-  background-image: url("images/octopus.JPG");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.custom-image {
-  display: flex;
-  background-image: url("images/custom.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-} */
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -133,16 +144,15 @@ h1 {
   background-color: #756ab6;
   color: white;
   position: relative;
-  height: 50px;
   width: 100%;
 }
 
 .footer-nav-head {
   font-weight: bold;
-  padding: 10px;
+  padding: 5px;
 }
 
-a {
+.footer a {
   color: white;
   text-decoration: none;
 }
@@ -152,4 +162,13 @@ ul {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  padding-bottom: px;
+}
+
+.return {
+  padding: 5px 0 5px 0;
+  background-color: #756ab6;
+  color: white;
+  border: none;
+  font-weight: bold;
 }
