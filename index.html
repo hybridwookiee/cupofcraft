@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header-container">
+    <header>
       <div class="header-logo">A Cup of Craft</div>
       <div class="searchbar">Search</div>
       <div class="header-menu">
@@ -22,58 +22,89 @@
           <button class="login-button">Login</button>
         </div>
       </div>
-    </div>
-    <div class="pagebar">
+    </header>
+    <nav>
       <div class="home">Home</div>
       <div class="products">Products</div>
-      <div class="about">About</div>
-      <div class="contact">Contact Us</div>
-    </div>
+      <!--Drop down with different options-->
+      <div class="about">About</div>            
+      <!--Hyperlink to About page-->
+      <div class="contact">Contact Us</div> 
+      <!--Hyperlink to Contact page-->
+    </nav>
     <div class="header-bar"></div>
     <div class="intro-image">
-      <h1>Hi I am sarah</h1>
+      <h1>Hi I am Sarah</h1>
     </div>
-    <div class="container">
-      <div class="sales-container">
+    <div class="content">
+      <div class="container">
         <div class="pagetitle">
           <h1>Sales</h1>
         </div>
         <div class="pages">
-          <div class="sales-box">Box 1</div>
-          <div class="sales-box">Box 2</div>
-          <div class="sales-box">Box 3</div>
+          <div>
+            <img src="images/sale.png" alt="sale_items" />
+          </div>
+          <div>
+            <img src="images/sale.png" alt="sale_items" />
+          </div>
+          <div>
+            <img src="images/sale.png" alt="sale_items" />
+          </div>
         </div>
       </div>
-      <div class="new-container">
+      <div class="container">
         <div class="pagetitle">
           <h1>New Products</h1>
         </div>
         <div class="pages">
-          <div class="new-box">Box 1</div>
-          <div class="new-box">Box 2</div>
-          <div class="new-box">Box 3</div>
+          <div>
+            <img src="images/Post-Thumbnail-Ratio.jpg" alt="squirtle" />
+          </div>
+          <div>
+            <img src="images/potatoes.jpg" alt="potatoes" />
+          </div>
+          <div>
+            <img src="images/turtle.jpg" alt="turtle" />
+          </div>
         </div>
       </div>
-      <div class="all-container">
+      <div class="container">
         <div class="pagetitle">
           <h1>All Products</h1>
         </div>
         <div class="pages">
-          <div class="product-box">Box 1</div>
-          <div class="product-box">Box 2</div>
-          <div class="product-box">Box 3</div>
+          <div>
+            <img src="images/boquet.webp" alt="boquet" />
+          </div>
+          <div>
+            <img src="images/octopus.JPG" alt="octopus" />
+          </div>
+          <div>
+            <img src="images/Two-Flowers.webp" alt="Two-Flowers" />
+          </div>
         </div>
       </div>
       <div class="custom-container">
         <div class="pagetitle">
+          <!--Add effect for mouse hover, darken and display text-->
           <h1>Custom request</h1>
         </div>
         <div class="pages">
-          <div class="custom-box">Box 1</div>
+            <img src="images/custom.webp" alt="custom" />
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer">Footer</div>
     <script src="index.js"></script>
   </body>
+  <footer class="footer">
+    <div class="footer-nav-head">Navigation</div>
+    <ul>
+      <li><a class="nav_a" href="contact.html" alt="Contact">Contact us</a></li>
+      <li><a class="nav_a" href="faq.html" alt="FAQ">FAQ</a></li>
+      <li><a class="nav_a" href="account.html" alt="Account">My Account</a></li>
+    </ul>
+  </footer>
+  <!-- Add contact details, return to home, return to header -->
 </html>

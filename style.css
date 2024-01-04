@@ -3,6 +3,9 @@ html {
 }
 body {
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
 * {
@@ -11,6 +14,8 @@ body {
   padding: 0;
 
   box-sizing: border-box;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .intro-image {
@@ -20,16 +25,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fffbfb;
-  padding: 150px;
+  padding: 5rem;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.header-container {
+header {
   display: flex;
   background-color: #ffe5e5;
   align-items: center;
@@ -46,7 +45,8 @@ body {
   display: none;
 }
 
-.pagebar {
+/* Drop down box */
+nav {
   display: flex;
   justify-content: space-evenly;
   padding: 5px;
@@ -61,37 +61,95 @@ h1 {
   text-align: center;
 }
 
-.sales-container {
-  display: flex;
-  flex-direction: column;
+.content img {
+  object-fit: contain;
+  min-width: 100%;
+  min-height: 100%;
+  width: 225px;
+  height: 225px;
 }
-.new-container {
+
+.container {
   display: flex;
   flex-direction: column;
-}
-.all-container {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
 }
 
 .custom-container {
   display: flex;
   flex-direction: column;
+  background-color: #ffe5e5;
+  padding: 10px 0 10px 0;
+}
+
+.pagetitle {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
 }
 
 .pages {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  flex: 4;
+  align-content: center;
+  align-items: center;
 }
+
+/* adds image as background  */
+/* .sale-image {
+  background-image: url("images/sale.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.new-image {
+  background-image: url("images/turtle.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.all-image {
+  background-image: url("images/octopus.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.custom-image {
+  display: flex;
+  background-image: url("images/custom.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #756ab6;
   color: white;
-  position: absolute;
+  position: relative;
+  height: 50px;
   width: 100%;
-  height: 60px;
-  bottom: 0;
+}
+
+.footer-nav-head {
+  font-weight: bold;
+  padding: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
