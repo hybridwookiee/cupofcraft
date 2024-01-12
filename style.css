@@ -138,7 +138,17 @@ h3 {
 .intro {
   display: flex;
   justify-content: center;
-  padding: 60px 5vw 30px 5vw;
+  padding: 30px 5vw 30px 5vw;
+}
+
+.intro a {
+  color: rgb(82, 81, 81);
+  font-size: 100%;
+  font-style: italic;
+}
+.intro h1 {
+  text-align: center;
+  font-size: 300%;
 }
 
 .intro h2 {
@@ -147,18 +157,13 @@ h3 {
   padding-bottom: 5px;
   color: rgb(82, 81, 81);
   font-style: italic;
+  font-size: 150%;
 }
 
-.intro a {
-  color: rgb(82, 81, 81);
-  font-style: italic;
-}
-.intro h1 {
-  text-align: center;
-}
 .intro h3 {
   padding-top: 5px;
   padding-right: 50px;
+  font-size: 150%;
   text-align: end;
 }
 
